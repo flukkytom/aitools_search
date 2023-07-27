@@ -1,0 +1,114 @@
+.our-work-process-section {
+    overflow: hidden;
+    &.bg-image {
+        background-position: bottom center;
+        background-size: contain;
+    }
+    .process-main-content {
+        position: relative;
+        padding-top: 50px;
+        .bg-line {
+            height: 250px;
+            left: 0;
+            position: absolute;
+            top: 50px;
+            width: calc(100% + 60px);
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+    }
+    .process-list > div {
+        &:nth-child(2) {
+            margin-top: 80px;
+        }
+        &:nth-child(4) {
+            margin-top: -35px;
+        }
+    }
+
+    .single-process {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        .process-no {
+            background-color: $color-red;
+            border-radius: 50%;
+            color: $color-white;
+            font-size: 24px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            width: 60px;
+            position: absolute;
+            top: -15px;
+            right: -12px;
+            z-index: 0;
+        }
+        .single-process-inner {
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            box-shadow: 3px 3px 18px rgba($color-black, 0.06);
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: $color-white;
+            text-align: center;
+            padding-top: 22px;
+            > h2 {
+                color: $color-title;
+                font-size: 18px;
+                line-height: 1.28em;
+                padding: 0px 55px 12px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .our-work-process-section .process-main-content .bg-line {
+        display: none;
+    }
+    .our-work-process-section .single-process {
+        height: 175px;
+        width: 175px;
+        .single-process-inner {
+            height: 175px;
+            width: 175px;
+            > h2 {
+                line-height: 1.2em;
+                padding: 0 40px 12px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px){
+    .our-work-process-section {
+        .process-main-content .bg-line {
+            display: none;
+        }
+        .process-main-content {
+            padding-top: 15px;
+        }
+        .process-list {
+            margin-bottom: -60px;
+            > div {
+                &:nth-child(2) {
+                    margin-top: 0px;
+                }
+                &:nth-child(4) {
+                    margin-top: 0px;
+                }
+            }
+        }
+        .single-process {
+            margin-bottom: 60px;
+            .process-no {
+                font-size: 20px;
+            }
+        }
+    }
+}

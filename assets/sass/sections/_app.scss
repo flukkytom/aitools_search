@@ -1,0 +1,113 @@
+/*-------------------------------------------------
+    [ ## App Download Section ]
+*/
+.app-download-section {
+    &.bg-image {
+        background-position: left center;
+    }
+    .section-header {
+        .section-title {
+            font-size: 48px;
+            font-weight: 600;
+            margin-bottom: 55px;
+            > span {
+                color: $color-red;
+                display: block;
+            }
+        }
+        .section-lead {
+            text-align: justify;
+        }
+    }
+    
+    .app-btn-group {
+        margin: -10px;
+        > .btn-app {
+            align-items: center;
+            background-color: $color-white;
+            border-radius: 5px;
+            display: inline-flex;
+            height: 62px;
+            margin: 10px;
+            padding: 0px;
+            box-shadow: 3px 3px 11px rgba($color-black, 0.06);
+            .icon {
+                border-right: $border-one;
+                width: 62px;
+                height: 62px;
+                line-height: 62px;
+            }
+            .btn-text {
+                color: #60686d;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.4em;
+                padding-left: 15px;
+                padding-right: 60px;
+                > span {
+                    display: block;
+                    font-weight: 600;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .download-thumb-area {
+        position: relative;
+        text-align: right;
+        > .thumb {
+            display: inline-block;
+            &:nth-child(1) {
+                margin-right: -35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .app-download-section {
+        .section-header .section-title {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .app-btn-group > .btn-app .btn-text {
+            padding-right: 25px;
+            font-size: 13px;
+            > span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .app-download-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .section-header .section-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        .download-thumb-area {
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .app-download-section .section-header .section-title {
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .app-download-section {
+        .section-header .section-title {
+            font-size: 24px;
+        }
+        .download-thumb-area {
+            display: none;
+        }
+    }
+}

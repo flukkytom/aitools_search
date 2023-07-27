@@ -1,0 +1,18 @@
+a {
+	color: inherit;
+	-webkit-transition: color 0.25s ease;
+	transition: color 0.25s ease;
+	&:hover,
+	&:focus,
+	&:active {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,197 @@
+/*------------------------------------------------------------------
+    # Section Header
+*/
+
+/* [ ## Headline ] */
+.section-header{
+    margin: -8px 0 55px;
+    .section-title {
+        font-size: 36px;
+        font-weight: normal; 
+        margin-bottom: 8px;
+        line-height: 1.2em;
+        > span {
+            font-weight: 600; 
+        }
+    } 
+    > p {
+        margin-bottom: 5px;
+    }
+}
+.headline {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.title-icon {
+    border-bottom: $border-one;
+    border-top: $border-one;
+    padding: 18px 0; 
+    margin-bottom: 8px;
+    > .title {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 18px;
+        margin-bottom: 0;
+        text-transform: capitalize;
+        > span {
+            color: #a7a7a7;
+            font-size: 25px;
+            margin-right: 15px;
+            display: inline-block;
+        }
+    }
+}
+
+
+
+/* [ ## Page Title ] */
+.page-title-area {
+    background-color: #F2F2F2;
+    padding: 30px 0;
+    &:before {
+        background-color: rgba($color-black2, 0.7);
+    }
+    &.style-two:before {
+        background-color: rgba(22, 22, 22, 0.6);
+    }
+    .breadcrumb-content-area {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 55px;
+        h1 {
+            margin-bottom: 5px;
+            font-size: 42px;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 1.35em;
+        }
+        .breadcrumb .breadcrumb-item {
+            color: #cfcfcf;
+            > a {
+                color: $color-white;
+                &:hover,
+                &:focus {
+                    color: $color-red;
+                }
+            }
+            &:before {
+                color: #CFCFCF; 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px){
+    .page-title-area .breadcrumb-content-area {
+        margin-top: 35px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .page-title-area .page-header-caption > h1 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .section-header {
+        margin: -8px 0 45px;
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+    }
+    .page-title-area {
+        .breadcrumb-content-area {
+            margin-top: 35px;
+            margin-bottom: 10px;
+        }
+        .hero-search-form.style-two {
+            margin-top: 25px;
+        }
+        .page-header-content {
+            display: block;
+            text-align: center;
+            .page-header-caption > h1 {
+                font-size: 28px;
+            }
+        }
+        &.style-two .hero-search-form.style-two {
+            margin-top: 0px;
+        }
+    }
+    .breadcrumb-area .breadcrumb {
+        display: inline-block;
+        .breadcrumb-item {
+            display: inline-block;
+            &:first-child:before {
+                padding: 0 6px 0 0;
+            }
+            &:before {
+                padding: 0 15px 0 8px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .section-header {
+        margin-top: -6px;
+        .section-title {
+            font-size: 28px;
+        }
+    }
+    .title-icon {
+        padding: 15px 0;
+        > .title {
+            font-size: 16px;
+            > span {
+                font-size: 20px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .page-title-area .page-header-content {
+        .page-header-caption > h1 {
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        .breadcrumb-content-area {
+            display: block;
+        }
+    }
+    .breadcrumb-area .breadcrumb {
+        .breadcrumb-item {
+            &:before {
+                padding: 0 6px 0 5px;
+            }
+            &:first-child:before {
+                padding: 0 5px 0 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .section-header {
+        margin: -5px 0 35px;
+        .section-title {
+            font-size: 24px;
+        }
+    }
+    .page-title-area .page-header-content {
+        .page-header-caption > h1 {
+            font-size: 24px;
+        }
+    }
+}

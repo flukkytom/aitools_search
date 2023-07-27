@@ -1,0 +1,109 @@
+.checkout-form-row {
+    .custom-select,
+    .form-controllar {
+        border-bottom: $border-one;
+        font-size: 14px;
+        height: 52px;
+        padding: 5px 0 !important;
+        width: 100%;
+        position: relative;
+        &:focus {
+            border-bottom: 1px solid $color-red;
+        }
+    }
+    .nice-select:after {
+        right: 0;
+        top: 11px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    button.btn {
+        margin-top: 25px;
+    }
+    .cart-total-area {
+        margin-top: 35px;
+        .cart-total-info {
+            .list > li > span {
+                text-align: left;
+            }
+            .cart-total-amount {
+                margin-bottom: 20px;
+            }
+        }
+        button.btn {
+            width: 90%;
+        }
+    }
+}
+
+
+.payment-method {
+    border-top: $border-one;
+    padding: 20px 0;
+    .form-group {
+        margin-bottom: 2px;
+        > input[type="radio"] {
+            display: none;
+            + .payment-radio {
+                color: $color-black;
+                display: block;
+                padding: 7px 0 7px 30px;
+                cursor: pointer;
+                position: relative;
+                font-weight: 500;
+                margin-bottom: 0px;
+                &:after {
+                    border: 2px solid $color-black;
+                    border-radius: 50%;
+                    content: "";
+                    height: 18px;
+                    left: 0;
+                    position: absolute;
+                    top: 50%;
+                    width: 18px;
+                    margin-top: -9px;
+                }
+            }
+            &:checked + .payment-radio:before {
+                background-color: $color-black;
+                border-radius: 50%;
+                content: "";
+                height: 8px;
+                left: 5px;
+                position: absolute;
+                top: 50%;
+                width: 8px;
+                margin-top: -4px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .shopping-checkout-section .row > .col-lg-4 {
+        &:last-child {
+            margin-top: 40px;
+        }
+    }
+}
+@media only screen and (max-width: 757px){
+    .shopping-checkout-section .row > .col-lg-4 {
+        margin-bottom: 40px;
+        &:last-child {
+            margin-top: 0px;
+            margin-bottom: 0;
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .cart-total-area {
+        padding: 35px 20px 40px;
+        .cart-total-info .cart-total-amount {
+            font-size: 18px;
+        }
+    }
+    .checkout-form-row button.btn {
+        margin-top: 5px;
+    }
+}

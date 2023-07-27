@@ -1,0 +1,119 @@
+/*************************************************************************
+    Template Name: Qamous
+    Template URI: https://themeforest.net/qamous-html/
+    Description: Qamous is a fully functional HtML theplate that gives you freedom to create any type of directory listing theme with tons of real time functionality for your directory listing site. We did not make it just to present the demo, but to present each and every functionality from a real user's point of view.
+    Author: Radiuzz
+    Version: 1.0
+    Author URI: https://themeforest.net/user/radiuzz
+    
+    
+    Note: style css.
+*************************************************************************/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Google Fonts
+# Typography
+    [ ## Elements ]
+    [ ## White Space ]
+# Button Style
+    [ ## Button ]
+    [ ## Fields ]
+# Section Header (With All Section Heading)
+    [ ## Headline ]
+    [ ## Breadcrumb ]
+    [ ## Page Title ]
+# Button Style
+    [ ## Button ]
+    [ ## Fields ]
+# Components
+    [ ## Alignment ]
+    [ ## Social Share ]
+    [ ## User Registration ]
+    [ ## Blockquote ]
+    [ ## Magala Side Sidebar ]
+    [ ## All Filter Tabs ]
+    [ ## Progress Circle ]
+    [ ## Carousel Nav Dots, Circle  Align Center ]
+    [ ## Serch Filter Options ]
+    [ ## Serch Filter Form ]
+    [ ## Scroll Top ]
+# Navigation
+    [ ## Links ]
+    [ ## Menus ]
+        [ ### Main Menu ]
+        [ ### Mobile Menu ]
+        [ ### Sidebar Menu ]
+    [ ## Pagination ]
+        [ ### Navigation ]
+        [ ### Post Navigation ]
+# Sections
+    [ ## Featured ]
+    [ ## Categories ]
+    [ ## Testimonial ]
+    [ ## App ]
+    [ ## work-process ]
+    [ ## Reviews ]
+    [ ## promo-video ]
+    [ ## Brand ]
+    [ ## Fanfact ]
+# Site Header ( All Site Header Style )
+    [ ## Header Card ]
+    [ ## Search ]
+    [ ## Sticky header ]
+# Post
+    [ ## Post Element ]
+    [ ## Default Post ]
+    [ ## Gid Post ]
+    [ ## List Post ]
+# Single Posts
+    [ ## Comment Respond ]
+    [ ## Comment Reviews ]
+# Listing Todo
+# Single Listing Todo
+# FrontPage Banner
+# Services
+# Testimonail Section
+# Foods Menu Section
+# Layouts
+    [ ## Instagram Area ]
+# Sidebar
+# Widget
+# Shop Pages
+    ## products
+    ## product-details
+    ## cart
+    ## checkout
+# Pages
+    ## Listing Map
+    ## About Us
+    ## How It Work
+    ## Contact 
+    ## Pricing
+    ## Add Listing
+    ## Dashbaord
+    ## Coming Soon
+    ## 404
+# Site Footer
+--------------------------------------------------------------*/
+
+@import 'base/variables';
+@import 'base/base';
+@import 'components/buttons-fields';
+@import 'components/section-title'; 
+@import 'components/components';
+@import 'navigation/navigation';
+@import 'sections/sections';
+@import 'layouts/header';
+@import 'layouts/post';
+@import 'layouts/single-post';
+@import 'layouts/todo';
+@import 'layouts/single-todo';
+@import 'layouts/hero'; 
+@import 'layouts/layouts';  
+@import 'layouts/sidebar'; 
+@import 'layouts/widgets'; 
+@import 'shop/shop-pages'; 
+@import 'pages/pages'; 
+@import 'layouts/footer'; 

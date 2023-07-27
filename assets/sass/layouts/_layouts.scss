@@ -1,0 +1,38 @@
+/*-------------------------------------------------
+    # Page Layouts
+*/
+/* [ ## Instagram Area ] */
+.instagram-widget-area {
+    .bt-instafeed-widget {
+        margin-bottom: 0px;
+    }
+    &.style-two .bt-instafeed-widget #instafeed > .feed-item {
+        padding-right: 1px;
+    }
+    &.style-three {
+        padding: 0 20px;
+        .bt-instafeed-widget #instafeed > .feed-item {
+            padding-right: 1px;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .instagram-widget-area .widget.bt-instafeed-widget #instafeed > .feed-item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .instagram-widget-area.style-three {
+        padding: 0 15px;
+    }
+}
+.add-banner-style-two {
+    text-align: center;
+    .add-content  {
+        display: inline-block;
+        padding: 20px;
+    }
+}

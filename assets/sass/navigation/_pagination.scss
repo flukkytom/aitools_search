@@ -1,0 +1,170 @@
+/* [ ### Navigation ] */
+.navigation {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	z-index: 1;
+	font-size: 14px;
+	.nav-links {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+		list-style: none;
+		padding: 30px 0 0;
+		font-size: 1em;
+		font-weight: bold;
+		margin: 0;
+		a {
+			font-weight: 500;
+            display: block;
+            -webkit-transition: ease-in 0.25s;
+            transition: ease-in 0.25s;
+            text-align: center;
+		}
+		> li {
+			display: inline-block;
+            margin: 0 3px;
+            > a {
+                height: 42px;
+                width: 42px;
+                line-height: 42px;
+                border-radius: 50%;
+                color: #8f8f8f;
+                font-weight: 500;
+                span {
+                    display: block;
+                }
+            }
+            &.active > a,
+            > a:hover {
+                background-color: $color-red !important;
+                color: $color-white !important;
+            }
+		}
+		li.nav-previous, 
+        li.nav-next {
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+			> a {
+				border: 0;
+				padding: 0 22px;
+				display: block;
+				position: relative;
+                width: auto;
+                border-radius: 40px;
+			}
+			a:hover {
+				background: transparent;
+				color: inherit;
+			}
+			&.disabled > a {
+				pointer-events: none;
+				filter: alpha(opacity=60);
+				opacity: 0.6;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+			}
+		}
+	}
+    &.pagination-center .nav-links {
+        text-align: center;
+    }
+}
+
+/* [ ### Post Navigation ] */
+.post-navigation {
+    background-color: $color-section-background;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    .post-previous {
+        text-align: right;
+    }
+    .post-next {
+        text-align: left;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 800;
+        margin: 0;
+        -webkit-transition: all 0.2s linear 0s;
+        transition: all 0.2s linear 0s;
+    }
+    .post-previous, 
+    .post-next {
+        max-width: 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        padding: 20px 0 27px;
+        &.bg-overlay:before {
+            background-color: $color-section-background;
+        }
+        a {
+            position: relative;
+            display: block;
+            padding: 30px;
+        }
+        span.label {
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 30px;
+            display: block;
+            color: $color-text;
+        }
+        &.active {
+            &.bg-overlay:before {
+                background-color: transparent;
+                background-image: -webkit-linear-gradient(left, rgba(43,27,94,0.9), rgba(43,66,241,0.9));
+                background-image: linear-gradient(to right, rgba(43,27,94,0.9), rgba(43,66,241,0.9));
+            }
+            h3 {
+                color: $color-white;
+            }
+            span.label {
+                color: #b0a2be;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navigation .nav-links > li {
+        > a {
+            height: 25px;
+            line-height: 25px;
+            width: 25px;
+            font-size: 13px;
+        }
+        &.nav-previous > a, 
+        &.nav-next > a {
+            padding: 0 10px;
+        }
+    }
+    .post-navigation {
+        h3 {
+            font-size: 18px;
+        }
+        .post-previous span.label, 
+        .post-next span.label {
+            font-size: 10px;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .post-navigation {
+        .post-previous, 
+        .post-next {
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+            max-width: 100%;
+            padding: 15px 0;
+            a {
+                padding: 15px;
+            }
+        }
+    }
+}

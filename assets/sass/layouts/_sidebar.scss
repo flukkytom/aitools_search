@@ -1,0 +1,106 @@
+/*------------------------------------------------------------------
+    # Sidebar 
+*/
+.sidebar {
+    margin-bottom: -30px;
+    .widget {
+        border:$border-one;
+        background-color: $color-white;
+        box-shadow: 3px 3px 11px rgba($color-black, 0.07);
+        margin-bottom: 30px;
+        .widget-title {
+            border-bottom:$border-one;
+            margin-bottom: 0;
+            padding: 20px 30px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            > span {
+                padding-right: 20px;
+                color: #a7a7a7;
+                font-size: 27px;
+            }
+        }
+        .widget-content {
+            padding: 30px;
+        }
+        &.widget-categories ul {
+            padding-top: 3px;
+            > li {
+                &:nth-child(6n-5) > a .count {
+                    background-color: $color-red;
+                }
+                &:nth-child(6n-4) > a .count {
+                    background-color: #E37050;
+                }
+                &:nth-child(6n-3) > a .count {
+                    background-color: #00CECA;
+                }
+                &:nth-child(6n-2) > a .count {
+                    background-color: $color-pink;
+                }
+                &:nth-child(6n-1) > a .count {
+                    background-color: $color-green;
+                }
+                &:nth-child(6n) > a .count {
+                    background-color: #5AB1F1;
+                }
+                > a {
+                    color: $color-black;
+                }
+            }
+        }
+        &.bt-instafeed-widget #instafeed {
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            margin: -5px;
+            > .feed-item {
+                -webkit-box-flex: 0;
+                    -ms-flex: 0 0 33.33%;
+                        flex: 0 0 33.33%;
+                max-width: 33.33%;
+                padding: 5px;
+            }
+        }
+    } 
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .sidebar .widget {
+        .widget-title {
+            padding: 15px;
+            > span {
+                padding-right: 10px;
+            }
+        }
+        .widget-content {
+            padding: 20px 15px;
+        }
+        .post.side-post .entry-title {
+            line-height: 1.25em;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){ 
+    .sidebar {
+        margin-top: 60px;
+    }
+}
+@media only screen and (max-width: 575px){ 
+    .sidebar .widget {
+        .widget-title {
+            padding: 15px;
+            > span {
+                padding-right: 10px;
+            }
+        }
+        .widget-content {
+            padding: 20px 15px;
+        }
+    }
+}

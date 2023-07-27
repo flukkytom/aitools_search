@@ -1,0 +1,171 @@
+
+/*-------------------------------------------------
+    [ ## Pricing Section ]
+*/
+.pricing-subscription-section {
+    .filter-pricing-tab {
+        text-align: right;
+        margin-bottom: 30px;
+        .nav-tabs {
+            background-color: #E3E3E3;
+            border: 0px solid;
+            border-radius: 40px;
+            overflow: hidden;
+            display: inline-block;
+            > li {
+                border-right: 0px solid;
+                display: inline-block;
+                margin: 0 -2px;
+                > a {
+                    border-radius: 0;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-right: 0;
+                    min-width: 170px;
+                    padding: 15px;
+                    text-transform: capitalize;
+                    -webkit-transition: all 0.25s ease 0s;
+                    transition: all 0.25s ease 0s;
+                    text-align: center;
+                    &.active,
+                    &:focus,
+                    &:hover{
+                        background-color: $color-red;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+    &.pricing-style-two {
+        .filter-pricing-tab {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+    }
+}
+.pricing-table-list {
+    margin-bottom: -30px;
+    .pricing-box {
+        border: $border;
+        background-color: $color-white;
+        margin-bottom: 30px;
+        .pricing-header {
+            text-align: center;
+            .package-type {
+                font-size: 20px;
+                text-transform: capitalize;
+                background-color: $color-black2;
+                color: $color-white;
+                font-weight: 600;
+                padding: 22px 15px;
+            }
+            .package-price {
+                background-color: $color-section-background;
+                font-size: 14px;
+                color: $color-black;
+                padding: 28px 15px 25px;
+                > h2 {
+                    font-size: 32px;
+                    font-weight: lighter;
+                    line-height: 0.85em;
+                    margin-bottom: 0;
+                    > sub {
+                        bottom: 5px;
+                        display: inline-block;
+                        font-size: 16px;
+                        font-weight: normal;
+                        left: -5px;
+                    }
+                }
+            }
+        }
+        .pricing-content {
+            text-align: center;
+            > ul > li {
+                font-size: 14px;
+                padding: 14px 15px;
+                &:nth-child(2n) {
+                    background-color: $color-section-background;
+                }
+                &:first-child {
+                    padding-top: 25px;
+                }
+            }
+        }
+        .pricing-footer {
+            text-align: center;
+            padding: 15px 15px 30px;
+            > .btn-plan {
+                background-color: $color-red;
+                border: 0 solid;
+                border-radius: 45px;
+                color: $color-white;
+                display: inline-block;
+                font-size: 12px;
+                font-weight: 600;
+                height: 43px;
+                line-height: 45px;
+                padding: 0 40px;
+                text-transform: uppercase;
+                box-shadow: 3px 3px 11px rgba($color-blue, 0.25); 
+                &:hover,
+                &:focus {
+                    background-color: $color-black2;
+                    color: $color-white;
+                }
+            }
+        }
+        &.active {
+            box-shadow: 0 7px 20px rgba($color-black2, 0.075);
+            .pricing-header {
+                .package-type {
+                    background-color: $color-red;
+                }
+                .package-price {
+                    background-color: $color-black2;
+                    color: $color-white;
+                    > h2 {
+                        color: $color-white;
+                    }
+                }
+            }
+            .pricing-footer> .btn-plan {
+                background-color: $color-black2;
+                &:hover,
+                &:focus {
+                    background-color: $color-red;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){ 
+    .pricing-subscription-section {
+        .filter-pricing-tab {
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        &.pricing-style-two .filter-pricing-tab {
+            margin-bottom: 40px;
+        }
+    }
+}
+@media only screen and (max-width: 575px){ 
+    .pricing-subscription-section .filter-pricing-tab .nav-tabs > li > a {
+        font-size: 14px;
+        min-width: 135px;
+    }
+    .pricing-table-list .pricing-box .pricing-header {
+        .package-type {
+            font-size: 18px;
+            padding: 17px 15px;
+        }
+        .package-price {
+            padding: 25px 15px 20px;
+        }
+    }
+}

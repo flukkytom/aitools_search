@@ -1,0 +1,441 @@
+/*------------------------------------------------------------------
+    # Button Style
+*/
+
+/***** [ ## Button ] ******/
+.btn {
+    -webkit-transition: all 0.3s ease 0.02s;
+    transition: all 0.3s ease 0.02s;
+}
+.btn:active,
+.btn:focus {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.125) inset;
+}
+.btn {
+    border: 0px solid;
+    border-radius: 3px;
+    color: $color-black;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.video-btn {
+    height: 110px;
+    margin-bottom: 30px;
+    width: 110px;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    &:after {
+        background-color: rgba($color-red,0.1);
+        content: "";
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 0;
+        border-radius: 50%;
+    }
+    &:before {
+        background-color: rgba($color-red,0.1);
+        content: "";
+        height: calc(100% - 20px);
+        left: 10px;
+        position: absolute;
+        top: 10px;
+        width: calc(100% - 20px);
+        z-index: 0;
+        border-radius: 50%;
+    }
+    > .icon {
+        background-color: $color-red;
+        border-radius: 50%;
+        font-size: 24px;
+        height: 70px;
+        line-height: 70px;
+        margin: 0 auto;
+        text-align: center;
+        width: 70px;
+        position: relative;
+        top: 20px;
+         color: $color-white;
+    }
+}
+
+
+
+.btn-default {
+    background-color: $color-red;
+    border-radius: 45px;
+    color: $color-white;
+    font-size: 12px;
+    height: 44px;
+    line-height: 45px;
+    padding: 0 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    box-shadow: 3px 3px 11px rgba($color-blue,0.25);
+    &.btn-disabled {
+        background-color: #f8f8f8;
+        box-shadow: 0 0 0 transparent;
+        color: #d5d5d5;
+        &:focus,
+        &:hover {
+            background-color: #f8f8f8;
+            color: #d5d5d5;
+            box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
+        }
+    }
+    &.btn-default2 {
+        border: 2px solid $color-black;
+        color: $color-black;
+        background-color: transparent;
+        line-height: 41px;
+    }
+    &:focus,
+    &:hover {
+        background-color: $color-black2;
+        color: $color-white;
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,.18), 0 0px 0px 0 rgba(0,0,0,.15);
+    }
+}
+.btn-bownload {
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 32px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-radius: 45px;
+    color: $color-black;
+    border: 2px solid $color-black;
+    font-size: 12px;
+    height: 44px;
+    line-height: 41px;
+    padding: 0 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    &.active:focus:not(:disabled):not(.disabled),
+    &:focus {
+        box-shadow: 0 0 0 0rem rgba(38, 143, 255, 0.5);
+    }
+    &:hover,
+    &:focus {
+        background-color: $color-red !important;
+        color: $color-white !important;
+        border: 2px solid $color-red;
+    }
+    &:active {
+        box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+    }
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0);
+}
+
+.btn-submit {
+    background-color: #9846df;
+    color: white;
+    font-weight: bold;
+    padding: 13px 35px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+    border: 1px solid #010101;
+    letter-spacing: 1px;
+}
+.btn-submit:hover {
+    color: #000;
+    background-color: white;
+}
+.btn-submit:focus {
+    color: #fff;
+}
+.btn-group {
+    display: block;
+    .btn { 
+        border-radius: 25px !important;
+        margin: 5px !important;
+    }
+}
+.btn-primary:active:not([disabled]):not(.disabled) {
+    background-color: #8445ee;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
+}
+
+/***** [ ## Fields ] ******/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  padding: 10px 20px !important;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    outline: none;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select option[selected] {
+    color: white;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: #7a7a7a !important;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+    -webkit-text-fill-color: #7a7a7a !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+input,
+select,
+textarea {
+    margin: 0;
+    border: none;
+    vertical-align: baseline;
+    font-size: 100%;
+    font-weight: 400;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    height: 45px;
+}
+textarea { 
+    min-height: 110px;
+    border-radius: 0px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+/* Form controllar */
+.form-controllar {
+    background-color: transparent;
+    border-bottom: $border;
+    box-shadow: 0 0 0 transparent inset;
+    font-size: 13px;
+    height: 52px;
+    width: 100%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.form-controllar:focus {
+    border-color: $color-black;
+    box-shadow: none;
+}
+.input-spinner {
+    background-color: #fff;
+    border: $border-one;
+    border-radius: 40px;
+    height: 48px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 0 30px;
+    > a {
+        display: inline-block;
+        float: left;
+        height: 46px;
+        line-height: 48px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        color: #8f8f8f;
+        &:hover,
+        &:focus {
+            color: $color-black;
+        }
+    }
+    > input {
+        border: 0 solid;
+        border-radius: 0;
+        color: $color-black;
+        float: left;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        height: 48px;
+        line-height: 48px;
+        font-weight: 600;
+        width: 85px !important;
+        padding: 5px 10px !important;
+        &:focus {
+            border: 0 solid;
+        }
+    }
+}
+
+.error {
+    color: red;
+}
+.success {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+    color: green;
+}
+/*----------Form----------*/
+.nice-select {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    background-color: transparent;
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 25px;
+    position: relative;
+    text-align: left !important;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: relative;
+    &:after {
+        content: '\f107';
+        font-family: $font-awesome;
+        display: block;
+        pointer-events: none;
+        position: absolute;
+        right: 7%;
+        top: 21%;
+        font-size: 14px;
+        color: $color-text;
+        -webkit-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+    }
+    .list {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+        box-sizing: border-box;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        overflow: hidden;
+        padding: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        -webkit-transform-origin: 50% 0;
+                transform-origin: 50% 0;
+        -webkit-transform: scale(0.75) translateY(-21px);
+                transform: scale(0.75) translateY(-21px);
+        -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+        transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+        z-index: 9;
+        min-height: 50px;
+        max-height: 200px;
+    }
+    &.open {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        &:after {
+            -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+        }
+        .list {
+            opacity: 1;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            pointer-events: auto;
+            -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+            width: 100%;
+            min-height: 50px;
+            max-height: 200px;
+            overflow-y: scroll;
+        }
+    }
+    .list:hover .option:not(:hover) {
+        background-color: transparent !important;
+    }
+    &.open 
+    &.disabled {
+        border-color: #ededed;
+        color: #999;
+        pointer-events: none;
+    }
+    &.disabled:after {
+        border-color: #cccccc;
+    }
+    .option {
+        cursor: pointer;
+        font-weight: 400;
+        line-height: 40px;
+        list-style: none;
+        min-height: 40px;
+        outline: none;
+        padding-left: 18px;
+        padding-right: 29px;
+        text-align: left;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        &:hover {
+            background-color: $color-red;
+            color: $color-white;
+        }
+    }
+    .option.disabled {
+        background-color: transparent;
+        color: #999;
+        cursor: default;
+    }
+    .current {
+        display: block;
+        line-height: 53px;
+    }
+}
+.custom-select,
+.custom-select:focus {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    outline: none;
+    border: 0px solid;
+    border-radius: 0px;
+    background: none;
+    color: $color-text;
+}
+.default-form {
+    .form-controllar {
+        padding: 10px 0 !important; 
+    }
+}
+
+@media only screen and (max-width: 575px) { 
+    .form-controllar {
+        height: 40px;
+    }
+}

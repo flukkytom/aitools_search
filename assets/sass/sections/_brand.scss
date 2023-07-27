@@ -1,0 +1,35 @@
+/*-------------------------------------------------
+    [ ## Popular Brands Section ]
+*/
+.popular-brands-section {
+    .owl-carousel .owl-item {
+        display: table;
+        height: 110px;
+    }
+    .brands-link {
+        cursor: pointer;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        img {
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            margin: 0 auto;
+        }
+        &:hover img {
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .popular-brands-section.ptb-90 {
+        padding: 70px 0
+    }
+}
+@media only screen and (max-width: 991px){
+    .popular-brands-section.ptb-90 {
+        padding: 60px 0
+    }
+}

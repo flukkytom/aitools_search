@@ -1,0 +1,13 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Note: All plugins Css File Here
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+	@import url("./plugins/bootstrap.min.css");
+	@import url("./plugins/animate.min.css");
+	@import url("./plugins/owl.carousel.min.css");
+	@import url("./plugins/trackpad-scroll-emulator.css");
+	@import url("./plugins/rangeslider.min.css");
+	@import url("./plugins/jquery-steps.css");
+	@import url("./plugins/chartist.min.css");
+	@import url("./plugins/jquery.datetimepicker.min.css");
+	@import url("./plugins/meanmenu.min.css");

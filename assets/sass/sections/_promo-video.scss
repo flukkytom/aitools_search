@@ -1,0 +1,87 @@
+
+.promo-video-section {
+    &.bg-gradient {
+        position: relative;
+        .bg-map-image {
+            background-position: left center;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+    }
+    .promo-video-content {
+        > h2 {
+            font-size: 48px;
+            line-height: 1.25em;
+            margin-bottom: 50px;
+            > span {
+                color: $color-red;
+            }
+        }
+        .btn-default:focus,
+        .btn-default:hover {
+            background-color: $color-white;
+            color: $color-red;
+        }
+    }
+    &.promo-video-style-two {
+        .promo-video-thumb {
+            display: inline-block;
+            position: relative;
+            .video-btn {
+                left: 50%;
+                margin-bottom: 0;
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1199px){
+    .promo-video-section.pt-20 {
+        padding-top: 0px;
+        .promo-video-thumb {
+            margin-top: 25px;
+        }
+    }
+    .promo-video-section .promo-video-content > h2 {
+        font-size: 42px;
+        line-height: 1.2em;
+    }
+}
+@media only screen and (max-width: 991px){
+    .promo-video-section.pt-20 .promo-video-thumb {
+        display: none;
+    }
+    .promo-video-section {
+        .promo-video-content > h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        &.promo-video-style-two {
+            .row > div {
+                text-align: center;
+            }
+            .promo-video-thumb {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .promo-video-section .promo-video-content > h2 {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .promo-video-section .promo-video-content > h2 {
+        font-size: 26px;
+    }
+}

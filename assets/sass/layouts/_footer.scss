@@ -1,0 +1,93 @@
+/*------------------------------------------------------------------
+    # Site Footer
+*/
+
+.site-footer {
+    .footer-widget-area > .container {
+        margin-bottom: -65px;
+    }
+    &.footer-default-style {
+        .widget {
+            .widget-title {
+                color: $color-black;
+                font-weight: 600;
+                font-size: 16px;
+                margin-bottom: 35px;
+                margin-top: -3px;
+                &:before {
+                    height: 0px;
+                }
+            }
+            &.tb-subscribe-widget .subscribe-box {
+                background-color: transparent;
+                border-width: 0px;
+                border-radius: 0px;
+                padding: 0;
+                text-align: left;
+                .subscribe-form {
+                    padding: 0;
+                }
+            }
+        }
+        .footer-bottom-area {
+            font-size: 12px;
+            line-height: 20px;
+            padding: 20px 0;
+            i.fa {
+                color: $color-red;
+            }
+        }
+        .footer-bottom-right {
+            text-align: right;
+            a:hover {
+                color: $color-red;
+            }
+        }
+    }
+    
+    &.footer-style-one {
+        .footer-bottom-area {
+            padding: 70px 0 20px;
+        }
+    }
+    
+    &.footer-style-three,
+    &.footer-style-two {
+        color: #cfcfcf;
+        &:before {
+            background-color: rgba(22,22,22,0.92);
+        }
+        .widget {
+            .widget-title {
+                color: $color-white;
+            }
+        }
+        .footer-bottom-area {
+            background-color: #0f0f0f;
+        }
+    }
+    &.footer-style-three {
+        padding-top: 5px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .site-footer {
+        .footer-widget-area > .container {
+            margin-bottom: -40px;
+        }
+        &.footer-default-style .widget .widget-title {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .site-footer.footer-default-style {
+        .footer-bottom-area,
+        .footer-bottom-right {
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    
+}

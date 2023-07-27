@@ -7,6 +7,7 @@ Settings.php
 Update all settings.php variable to your own links
 
 // api endpoint to send search to: This is the /search on your Admin application deployment
+
 $search_endpoint = "<>";
 
 // category endpoint: data for categories: This is the /category_group on your Admin application deployment

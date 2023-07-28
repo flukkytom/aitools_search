@@ -21,3 +21,8 @@ Update all settings.php variable to your own links
 // url to send new members to register and add new tools: This is the login or register page on your Member application deployment
 
 `$member_endpoint = "<>";`
+
+Install LAMP on Linux 2023 AMI
+=============================
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html

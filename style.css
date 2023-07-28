@@ -7237,12 +7237,21 @@ ul.dropdown-content > .dropdown-trigger:hover > ul.dropdown-content > li:hover >
   margin-bottom: 6px;
 }
 
-.popular-todo-item .todo-rating .rating-value {
+.popular-todo-item .todo-rating .rating-value .rating-value-orange{
   font-size: 11px;
 }
 
 .popular-todo-item .todo-rating .rating-value > span {
   background-color: #5bb638;
+  color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+}
+
+.popular-todo-item .todo-rating .rating-value-orange > span {
+  background-color: #e07313;
   color: #fff;
   display: inline-block;
   margin-right: 10px;

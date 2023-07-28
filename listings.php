@@ -120,7 +120,7 @@ $category_group = getRecentSearch($category_endpoint);
                         </form><!--./ hero-search-form -->
                         <div class="breadcrumb-content-area">
                             <div class="page-header-caption">
-                                <h1>Search Results</h1>
+                                <h1>Ai Search Results</h1>
                             </div>
                             <div class="breadcrumb-area">
                                 <ol class="breadcrumb">
@@ -159,8 +159,18 @@ $category_group = getRecentSearch($category_endpoint);
                                             <!--~~~~~ Start Popular Todo Item ~~~~~-->
                                             <?php
                                                 if ($responseData) {
+                                                    $counter = -1; // Initialize a counter variable
                                                     foreach ($responseData as $tool) {
+
+                                                        // Increment the counter
+                                                        $counter++;
+
+                                                        // Break out of the loop after x iterations
+                                                        if ($counter === $listNumber) {
+                                                            break;
+                                                        }
                                             ?>
+
                                             <div class="popular-todo-item todo-item-list">
                                                 <div class="todo-thumbnail-area">
                                                     <figure class="item-thumb" style="width: 370px; height: 270px">  
@@ -183,11 +193,19 @@ $category_group = getRecentSearch($category_endpoint);
 
                                                 <div class="content-entry-wrap">
                                                     <div class="todo-content">
-                                                        <h3 class="title"><a href="listing-details.html"><?php echo $tool['title']; ?></a></h3>
+                                                        <h3 class="title"><a href="#"><?php echo $tool['title']; ?></a></h3>
                                                         <div class="todo-rating">
+                                                            <?php
+                                                            if ($tool['rating'] > 3.5) {
+                                                            ?>
                                                             <div class="rating-value">
                                                                 <span><?php echo $tool['rating']; ?></span>
                                                             </div>
+                                                            <?php } else { ?>
+                                                                <div class="rating-value-orange">
+                                                                <span><?php echo $tool['rating']; ?></span>
+                                                            </div>
+                                                            <?php } // end if ?>
                                                             <div class="rating-icon">
                                                                 <!-- <ul>
                                                                     <li class="yellow">$</li>
@@ -200,11 +218,11 @@ $category_group = getRecentSearch($category_endpoint);
                                                         <div class="todo-meta">
                                                             <div class="todo-location">
                                                                 <span class="icon-location"></span>
-                                                                <?php echo $tool['website']; ?>       
+                                                                <a href="<?php echo $tool['website']; ?>?source=aikloud" target="_blank"><?php echo $tool['website']; ?></a>       
                                                             </div>
                                                             <div class="todo-number">
-                                                                <span class="icon-email"></span>
-                                                                <?php echo $tool['business_email']; ?>       
+                                                                <span class="icon-phone"></span>
+                                                                <?php echo $tool['business_phone']; ?>       
                                                             </div>
                                                         </div><!--./ todo-meta -->
                                                         <div class="todo-summary">
@@ -216,8 +234,8 @@ $category_group = getRecentSearch($category_endpoint);
                                                             <span class="icon-qrcode"></span>
                                                             <?php echo $tool['category']; ?>
                                                         </a>
-                                                        <a href="listing-details.html" class="todo-status">
-                                                            TRY Ai TOOL
+                                                        <a href="mailto:<?php echo $tool['business_email'];?>" target="_blank" class="todo-status">
+                                                        <?php echo $tool['business_email'];?>
                                                         </a>
                                                     </div><!--./ todo-footer -->
                                                 </div><!--./ content-entry-wrap -->
@@ -281,7 +299,16 @@ $category_group = getRecentSearch($category_endpoint);
                                                         <!--~~~~~ Start Todo Item ~~~~~-->
                                                         <?php
                                                             if ($recent_searches) {
+                                                                $counter = -1; // Initialize a counter variable
                                                                 foreach ($recent_searches as $search) {
+                
+                                                                        // Increment the counter
+                                                                        $counter++;
+                
+                                                                        // Break out of the loop after x iterations
+                                                                        if ($counter === $viewedNumber) {
+                                                                            break;
+                                                                        }
                                                         ?>
                                                         <div class="todo-side-item popular-todo-item">
                                                             <div class="todo-thumbnail-area">
@@ -301,7 +328,7 @@ $category_group = getRecentSearch($category_endpoint);
                                                                     <div class="todo-meta">
                                                                         <div class="todo-location">
                                                                             <span class="icon-location"></span>
-                                                                            <?php echo $search['website']; ?>   
+                                                                            <a href="<?php echo $search['website']; ?>?source=aikloud" target="_blank"><?php echo $search['website']; ?>  </a> 
                                                                         </div>
                                                                         <div class="todo-number">
                                                                             <span class="icon-email"></span>

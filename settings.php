@@ -13,5 +13,9 @@ $recent_search_endpoint = "http://54.89.247.176:8080/recent_search";
 // url to snd new members to register and add new tools
 $member_endpoint = "http://54.89.247.176:8090/";
 
+// amount of search result to display
+$listNumber = 5;
 
+// amount of recently viewed result to display
+$viewedNumber = 6;
 ?>

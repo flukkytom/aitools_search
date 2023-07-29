@@ -1,6 +1,13 @@
 # aitools_search
 AiKloud Main Search Page - Users
 
+Git Clone
+=========
+`git clone https://github.com/flukkytom/aitools_search.git`
+
+Token as Password
+=================
+https://www.educative.io/answers/how-to-create-a-personal-access-token-for-github-access
 
 Settings.php
 ============

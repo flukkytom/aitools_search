@@ -124,7 +124,7 @@ $category_group = getRecentSearch($category_endpoint);
                             </div>
                             <div class="breadcrumb-area">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>  
+                                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>  
                                     <li aria-current="page" class="breadcrumb-item active">Ai Tools Database</li>
                                 </ol>
                             </div>

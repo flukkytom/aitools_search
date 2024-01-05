@@ -34,7 +34,7 @@ Install LAMP on Linux 2023 AMI
 
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html
 
-Where should I Install/Clone the app
+Where should I Install/Clone the app?
 ====================================
 You should copy/clone the application into your Apache directory, most likely it would be in /var/www/html. The folder where you tested your phpinfo according to the guide above will be the ideal directory.
 

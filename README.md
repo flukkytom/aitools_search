@@ -1,6 +1,11 @@
 # aitools_search
 AiKloud Main Search Page - Users
 
+Install LAMP on Linux 2023 AMI
+=============================
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html
+
 Git Clone
 =========
 `yum install git`
@@ -9,11 +14,6 @@ Git Clone
 Token as Password
 =================
 https://www.educative.io/answers/how-to-create-a-personal-access-token-for-github-access
-
-Install LAMP on Linux 2023 AMI
-=============================
-
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html
 
 Settings.php
 ============

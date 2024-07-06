@@ -3,11 +3,17 @@ AiKloud Main Search Page - Users
 
 Git Clone
 =========
+`yum install git`
 `git clone https://github.com/flukkytom/aitools_search.git`
 
 Token as Password
 =================
 https://www.educative.io/answers/how-to-create-a-personal-access-token-for-github-access
+
+Install LAMP on Linux 2023 AMI
+=============================
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html
 
 Settings.php
 ============
@@ -29,10 +35,7 @@ Update all settings.php variable to your own links
 
 `$member_endpoint = "<>";`
 
-Install LAMP on Linux 2023 AMI
-=============================
 
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.html
 
 Where should I Install/Clone the app?
 ====================================

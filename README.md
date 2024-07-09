@@ -8,8 +8,9 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2023.h
 
 Git Clone
 =========
-`yum install git`
-`git clone https://github.com/flukkytom/aitools_search.git`
+Install git - `yum install git` <br />
+Go to your httpd directory - `cd /var/www/html` <br />
+Clone the Repo to your server - `git clone https://github.com/flukkytom/aitools_search.git`
 
 Token as Password
 =================
